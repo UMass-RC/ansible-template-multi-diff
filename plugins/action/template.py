@@ -165,7 +165,7 @@ class ActionModule(ActionBase):
                     ),
                 )
                 # call with ansible.legacy prefix to eliminate collisions with collections while still allowing local override
-                copy_action = self._shared_loader_obj.action_loader.get('ansible.legacy.copy',
+                copy_action = self._shared_loader_obj.action_loader.get('unity.copy_multi_diff.copy',
                                                                         task=new_task,
                                                                         connection=self._connection,
                                                                         play_context=self._play_context,
